@@ -86,7 +86,7 @@
 
 ### 5. Postman API 명세서
 
-(포스트맨 주소)
+https://www.postman.com/cloudy-resonance-766003/workspace/wantedlab/documentation/17663987-d2ec5eec-6685-4218-824f-144f1c8b6a6f
 
 -----
 
