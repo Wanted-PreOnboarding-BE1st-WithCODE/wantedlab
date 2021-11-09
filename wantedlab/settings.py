@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SECRET_KEY
+SECRET_KEY = SECRET_KEY #os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,6 +79,16 @@ WSGI_APPLICATION = 'wantedlab.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = DATABASES
+# DATABASE = {
+#     'default' : {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME':os.environ.get('DB_DATABASE'),
+#         'USER':os.environ.get('DB_USER'), 
+#         'PASSWORD':os.environ.get('DB_ROOT_PASSWORD'),
+#         'HOST':os.environ.get('DB_HOST'),
+#         'PORT':os.environ.get('DB_PORT')
+#     }
+# }
 pymysql.install_as_MySQLdb()
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
