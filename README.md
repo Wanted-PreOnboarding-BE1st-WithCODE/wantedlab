@@ -84,9 +84,13 @@
 
 -----
 
-### 5. Postman API 명세서
+### 5. Postman API 명세서, API 테스트
 
-https://www.postman.com/cloudy-resonance-766003/workspace/wantedlab/documentation/17663987-d2ec5eec-6685-4218-824f-144f1c8b6a6f
+### **API 명세서 :** https://www.postman.com/cloudy-resonance-766003/workspace/wantedlab/documentation/17663987-d2ec5eec-6685-4218-824f-144f1c8b6a6f
+
+
+
+### API 테스트 : https://www.postman.com/cloudy-resonance-766003/workspace/wantedlab
 
 -----
 
@@ -126,7 +130,7 @@ headers에 x-wanted-language로 전달받은 언어타입에 따라 생성된 �
 
 ### 7. Unittest 결과
 
-![스크린샷 2021-11-10 오전 2 43 26](https://user-images.githubusercontent.com/61782539/140976610-fddbe105-0666-43ab-8000-e8fd3fa3c307.png)
+![스크린샷 2021-11-10 오전 2 43 26](https://user-images.githubusercontent.com/61782539/140976610-fddbe105-0666-43ab-8000-e8fd3fa3c307.png)
 
 -----
 
