@@ -10,9 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path
-from my_settings import DATABASES, SECRET_KEY
+from pathlib     import Path
 import pymysql
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SECRET_KEY #os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,17 +78,17 @@ WSGI_APPLICATION = 'wantedlab.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = DATABASES
-# DATABASE = {
-#     'default' : {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME':os.environ.get('DB_DATABASE'),
-#         'USER':os.environ.get('DB_USER'), 
-#         'PASSWORD':os.environ.get('DB_ROOT_PASSWORD'),
-#         'HOST':os.environ.get('DB_HOST'),
-#         'PORT':os.environ.get('DB_PORT')
-#     }
-# }
+DATABASE = {
+    'default' : {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':os.environ.get('DB_DATABASE'),
+        'USER':os.environ.get('DB_USER'), 
+        'PASSWORD':os.environ.get('DB_ROOT_PASSWORD'),
+        'HOST':os.environ.get('DB_HOST'),
+        'PORT':os.environ.get('DB_PORT')
+    }
+}
+
 pymysql.install_as_MySQLdb()
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
